@@ -1,0 +1,121 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Inter;
+    
+}
+.header {
+    background-color: #fff;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+    min-width: 450px;
+    
+    padding: 10px 20px;
+    display: flex;
+    z-index: 1;
+}
+.header.dark {
+    background-color: #000;
+}
+main {
+    background: url(/public/group.png);
+    padding: 57px 27px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    flex: 1 1 auto;
+    background-color: white;
+    color: #2B283A;
+}
+main.dark{
+    background-color: #000;
+}
+.header nav {
+    display: flex;
+    align-items: center;
+}
+nav img {
+        max-width: 24px;
+}
+.header--title {
+    color: #00ABCA;
+    font-size: 22px;
+    letter-spacing: -1.113px;
+}
+.toggler {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+nav .toggler--light {
+    color: #2B283A;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 11px;
+}
+nav.dark .toggler--light {
+    color: #D5D4D8;
+}
+
+nav .toggler--dark{
+    color: #D5D4D8;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 11px;
+}
+
+nav.dark .toggler--dark{
+    color: #2B283A;
+}
+
+nav .toggler--div {
+    height: 10px;
+    width: 20px;
+    background-color: #000;
+    border-radius: 14px;
+    margin-inline: 5px;
+}
+nav.dark .toggler--div {
+    display: flex;
+    justify-content: end;
+}
+
+nav .toggler--div-circle {
+    background: #fff;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 50%;
+}
+nav.dark .toggler--div-circle{}
+
+.main--title {
+    font-size: 39.06px;
+    letter-spacing: -1.953px;
+}
+
+.main--facts {
+    margin-top: 46px;
+    max-width: 400px;
+}
+
+.main--facts > li {
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.main--facts > li::marker {
+    font-size: 1.4rem;
+    color: #61DAFB;
+}

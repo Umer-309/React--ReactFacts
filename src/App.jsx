@@ -8,7 +8,6 @@ function App() {
   function toggle() {
     setDarkMode(prevState => !prevState)
   }
-  console.log(darkMode)
 
   return (
     <div className='container'>

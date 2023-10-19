@@ -2,13 +2,18 @@ import React from 'react'
 import Header from "./Header"
 import Body from './Body'
 
-
 function App() {
+  const[darkMode, setDarkMode] = React.useState(false)
+
+  function toggle() {
+    setDarkMode(prevState => !prevState)
+  }
+  console.log(darkMode)
 
   return (
     <div className='container'>
-      <Header />
-      <Body />
+      <Header toggle={toggle} darkMode={darkMode} />
+      <Body darkMode={darkMode}/>
     </div>
   )
 }
